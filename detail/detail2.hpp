@@ -1,0 +1,1 @@
+int detail2();
