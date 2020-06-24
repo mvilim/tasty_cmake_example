@@ -1,14 +1,10 @@
 add_subdirectory(detail)
 
-add_library(tasty_int STATIC)
+add_library(tasty_int INTERFACE)
 
-target_sources(
-    tasty_int
-    PUBLIC
-)
 target_link_libraries(
     tasty_int
-    PUBLIC
+    INTERFACE
     tasty_int-detail1
     tasty_int-detail2
 )
